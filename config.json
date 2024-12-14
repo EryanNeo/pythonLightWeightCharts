@@ -1,0 +1,11 @@
+{
+    "dynamic": {
+        "index": "Nifty50",
+        "script": "DRREDDY",
+        "timeFrame": "D",
+        "speed": 500,
+        "last": 4448,
+        "is_paused": true
+    },
+    "static": false
+}
