@@ -1,5 +1,10 @@
 import json
+from PySide6.QtWidgets import QComboBox
 
+class NoKeyEventComboBox(QComboBox):
+    def keyPressEvent(self, event):
+        event.ignore()
+        
 file = 'config.json'
 timeframe_convert = {
     '5M': '5Minute',
@@ -15,4 +20,7 @@ def write_json(data):
         f.write(json.dumps(data, indent = 4))
         
 if __name__ == '__main__':
-    print(read_json()['dynamic'])
+    live, dynamic, static = read_json().values()
+    print(live)
+    print(dynamic)
+    print(static)

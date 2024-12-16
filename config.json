@@ -1,11 +1,16 @@
 {
+    "live": false,
     "dynamic": {
         "index": "Nifty50",
-        "script": "DRREDDY",
-        "timeFrame": "D",
-        "speed": 500,
-        "last": 4448,
+        "script": "ADANIENT",
+        "timeFrame": "15M",
+        "speed": 100.0,
+        "last": 45394,
         "is_paused": true
     },
-    "static": false
+    "static": {
+        "index": "Nifty50",
+        "script": "ASIANPAINT",
+        "timeFrame": "D"
+    }
 }
