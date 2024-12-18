@@ -1,3 +1,5 @@
+Video Demonstration: https://youtu.be/O6Hh0KVbzJI?si=PDgkhB-nsz5-mnm_
+
 # pythonLightWeightCharts
 LightWeight Integration in a Qt App
 
