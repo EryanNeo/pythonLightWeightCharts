@@ -12,5 +12,9 @@
         "index": "Nifty50",
         "script": "ASIANPAINT",
         "timeFrame": "D"
+    },
+    "analysis": {
+        "index": "Nifty50",
+        "script": "ASIANPAINT"
     }
 }

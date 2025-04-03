@@ -3,6 +3,7 @@ from PySide6.QtCore import Qt
 from PySide6.QtGui import QAction
 from qt_static import StaticChart
 from qt_live import LiveChart
+from qt_analysis import AnalysisChart
 from writer import read_json, write_json
 
 
@@ -24,8 +25,10 @@ class App:
         self.tab_widget = QTabWidget()
         self.static_chart_tab = StaticChart()
         self.live_chart_tab = LiveChart()
+        self.analysis_chart_tab = AnalysisChart()
         self.tab_widget.addTab(self.static_chart_tab, 'Static Chart')
         self.tab_widget.addTab(self.live_chart_tab, 'Live Chart')
+        self.tab_widget.addTab(self.analysis_chart_tab, 'Analysis Chart')
         if self.config['live']:
             self.tab_widget.setCurrentWidget(self.live_chart_tab)
         self.tab_widget.currentChanged.connect(self.tab_changed)
